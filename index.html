@@ -1,59 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f2f2f2;
-            text-align: center;
-            margin: 0;
-        }
-        header {
-            background-color: #6c63ff;
-            color: white;
-            padding: 30px;
-        }
-        section {
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        h2 {
-            color: #6c63ff;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Pooja | Web Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
-        footer {
-            background-color: #333;
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f6ff;
+            color: #333;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        nav h2 {
+            color: #6c63ff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 8px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #6c63ff;
+        }
+
+        /* Home */
+
+        .hero {
+            background: linear-gradient(135deg, #6c63ff, #a99cff);
             color: white;
-            padding: 15px;
+            text-align: center;
+            padding: 100px 20px;
         }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #6c63ff;
+            padding: 13px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+
+        section {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 40px 25px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px #e5e2ff;
+        }
+
+        section h2 {
+            color: #6c63ff;
+            margin-bottom: 22px;
+        }
+
+        section p {
+            line-height: 1.8;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills span {
+            background: #eeecff;
+            color: #554bd4;
+            padding: 13px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Projects */
+
+        .project {
+            background: #f8f7ff;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        .project h3 {
+            color: #554bd4;
+            margin-bottom: 12px;
+        }
+
+        /* Contact */
+
+        .contact a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #29263d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive */
+
+        @media (max-width: 600px) {
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            section {
+                margin: 20px 12px;
+            }
+        }
+
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Hello , I'm Pooja</h1>
-        <p>Welcome to My Personal Portfolio</p>
+
+    <!-- Navigation -->
+
+    <nav>
+        <h2>Pooja.</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <header class="hero" id="home">
+
+        <h1>Hello, I'm Pooja 👋</h1>
+
+        <p>
+            Computer Science Student |
+            Aspiring Web Developer
+        </p>
+
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
 
     </header>
-    <section>
+
+    <!-- About -->
+
+    <section id="about">
+
         <h2>About Me</h2>
-        <p> I am a Computer Science Student.</p>
-        <p>I love learning web Development.</p>
-    </section>
-    <section>
-        <h2>My Education</h2>
+
         <p>
-            HTML | CSS | Javascript
+            Hello! I am Pooja, a Computer Science student
+            passionate about Web Development.
+
+            I enjoy creating websites and learning
+            new technologies.
         </p>
+
     </section>
-    <section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2>My Education</h2>
+
+        <h3>B.Sc Computer Science</h3>
+
+        <p>
+            I am pursuing my graduation in
+            Computer Science.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project">
+
+            <h3>🐾 PetHub</h3>
+
+            <p>
+                A pet care and pet rental website
+                created as a web development project.
+            </p>
+
+        </div>
+
+        <div class="project">
+
+            <h3>My Personal Portfolio</h3>
+
+            <p>
+                A personal portfolio website
+                created using HTML and CSS.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
         <h2>Contact Me</h2>
-        <p>Email: your- email@ecample.com</p>
+
+        <p>
+            Email:
+            poojadudhbhate64@gmail.com
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/pooja-dudhbhate">
+                Visit My GitHub
+            </a>
+        </p>
+
     </section>
+
+    <!-- Footer -->
+
     <footer>
-        <p>@ 2026 Pooja | My Portfolio</p>
+
+        <p>
+            © 2026 Pooja | Web Developer Portfolio
+        </p>
+
     </footer>
+
 </body>
 </html>
